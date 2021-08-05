@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Hugo 0.84.0">
+      <title>Bizxpert</title>
+
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-fixed/">
+      <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+      
+
+      <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+      
+      <!-- Custom styles for this template -->
+      <link href="css/navbar-top-fixed.css" rel="stylesheet">
+      <link href="css/signin.css" rel="stylesheet">
+  </head>
+
+
+  <body class="text-start">
+  <!-- nav in common -->   
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/brand/logo.svg" style="width: 7rem;"
+            class="d-inline-block align-top" alt="Bootstrap" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 marginauto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Expert list</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My session</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button class="btn btn-outline-success" type="submit">Login</button>
+            <button class="btn btn-outline-success marginleft" type="submit">Resigter</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Register strart -->
+    <main class = "form-signin">
+    <div>
+        <h1 class="h2 mb-3 fw-normal">Complete Your Profile!</h1>
+        <h6 class="h6 mb-3 fw-light">For the purpose of industry regulation, your details are required.</h6>
+        <div class="bd-form">
+        <form>
+        <div class="mb-3">
+            <label for="InputBusiness" class="form-label">Type Of Business*</label>
+            <input type="text" class="form-control" id="InputBusiness" placeholder="Enter the type of business you are in " required>
+            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+          <div class="mb-3">
+            <label for="InputExperience" class="form-label">Work Experience*</label>
+            <input type="number" class="form-control" id="InputExperience" required>
+            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="customFile">Add Profile Photo</label>
+            <input type="file" class="form-control" id="customFile">
+          </div>
+          <div class="mb-3">
+            <label for="InputBio" class="form-label">Add Bio</label>
+            <input type="text"  class="form-control form-big" id="InputBio" placeholder="Adding bio helps to understand what your business is " >
+          </div>
+          <div class="mt-3 mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="Check">
+            <label class="form-check-label" for="Check">I agree to terms & conditions</label>
+          </div>
+          <button type="submit" class="w-100 btn btn-lg btn-primary">Save & Continue</button>
+       
+        </form>
+        </div>
+      </div>
+    </main>
+      <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>   
+    </body>
+</html>
